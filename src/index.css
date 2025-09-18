@@ -1,9 +1,9 @@
-@import "tailwindcss";
-
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@400;500;600;700&display=swap");
 
-:root {
+@import "tailwindcss";
+
+@theme {
   --background: #ffffff;
   --foreground: #171717;
   --black: #121212;
@@ -24,8 +24,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-quicksand: var(--font-quicksand);
-  --font-courgette: var(--font-courgette);
   --color-black: var(--black);
   --color-gray: var(--gray);
   --color-white: var(--white);
@@ -52,46 +50,86 @@ body {
 
 /* headings */
 .h1 {
-  @apply font-quicksand text-[112px] leading-[100px];
+  @apply font-quicksand text-[40px] leading-[48px]    
+         sm:text-[72px] sm:leading-[80px] 
+         lg:text-[112px] lg:leading-[100px];
 }
+
 .h2 {
-  @apply font-courgette text-[112px] leading-[100px];
+  @apply font-courgette text-[36px] leading-[44px]
+         sm:text-[64px] sm:leading-[72px]
+         lg:text-[112px] lg:leading-[100px];
 }
+
 .h3 {
-  @apply font-courgette text-[72px] leading-[120px];
+  @apply font-courgette text-[28px] leading-[36px]
+         sm:text-[48px] sm:leading-[60px]
+         lg:text-[72px] lg:leading-[120px];
 }
+
 .h4 {
-  @apply font-quicksand text-[64px] leading-[120px];
+  @apply font-quicksand text-[24px] leading-[32px]
+         sm:text-[40px] sm:leading-[56px]
+         lg:text-[64px] lg:leading-[120px];
 }
+
 .h5 {
-  @apply font-quicksand text-[56px] leading-[120px];
+  @apply font-quicksand text-[22px] leading-[28px]
+         sm:text-[36px] sm:leading-[48px]
+         lg:text-[56px] lg:leading-[120px];
 }
+
 .h6 {
-  @apply font-courgette text-[56px] leading-[120px];
+  @apply font-courgette text-[22px] leading-[28px]
+         sm:text-[36px] sm:leading-[48px]
+         lg:text-[56px] lg:leading-[120px];
 }
+
 .h7 {
-  @apply font-quicksand text-[48px] leading-[120px];
+  @apply font-quicksand text-[20px] leading-[28px]
+         sm:text-[32px] sm:leading-[44px]
+         lg:text-[48px] lg:leading-[120px];
 }
+
 .h8 {
-  @apply font-courgette text-[48px] leading-[120px];
+  @apply font-courgette text-[20px] leading-[28px]
+         sm:text-[32px] sm:leading-[44px]
+         lg:text-[48px] lg:leading-[120px];
 }
 
 /* body */
 .body1 {
-  @apply font-quicksand text-[24px] leading-[140%];
+  @apply font-quicksand text-[16px] leading-[24px]     
+         sm:text-[20px] sm:leading-[28px]
+         lg:text-[24px] lg:leading-[32px];
 }
+
 .body2 {
-  @apply font-quicksand text-[24px] leading-[140%] font-semibold;
+  @apply font-quicksand text-[16px] leading-[24px] font-semibold
+         sm:text-[20px] sm:leading-[28px] sm:font-semibold
+         lg:text-[24px] lg:leading-[32px] lg:font-semibold;
 }
+
 .body3 {
-  @apply font-quicksand text-[18px] leading-[180%];
+  @apply font-quicksand text-[14px] leading-[20px]
+         sm:text-[16px] sm:leading-[24px]
+         lg:text-[18px] lg:leading-[28px];
 }
+
 .body4 {
-  @apply font-quicksand text-[18px] leading-[180%];
+  @apply font-quicksand text-[14px] leading-[20px]
+         sm:text-[16px] sm:leading-[24px]
+         lg:text-[18px] lg:leading-[28px];
 }
+
 .body5 {
-  @apply font-quicksand text-[16px] leading-[100%];
+  @apply font-quicksand text-[12px] leading-[16px]
+         sm:text-[14px] sm:leading-[20px]
+         lg:text-[16px] lg:leading-[24px];
 }
+
 .body6 {
-  @apply font-quicksand text-[14px] leading-[14px];
+  @apply font-quicksand text-[12px] leading-[14px]
+         sm:text-[13px] sm:leading-[16px]
+         lg:text-[14px] lg:leading-[20px];
 }
