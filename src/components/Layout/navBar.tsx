@@ -15,10 +15,10 @@ export default function Navbar() {
           key={link.to}
           to={link.to}
           className={({ isActive }) =>
-            `body6 flex h-8 cursor-pointer items-center rounded-[40px] border px-6 py-1 transition-all duration-300 ${
+            `body6 flex h-8 cursor-pointer items-center rounded-[40px] border px-6 py-1 transition-all duration-500 ${
               isActive
-                ? 'border-gray-800'
-                : 'border-gray-300 hover:border-gray-500'
+                ? 'border-gray-800 dark:border-gray-300'
+                : 'hover:border-gray-300 border-gray-500'
             }`
           }
         >

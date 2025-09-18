@@ -20,7 +20,7 @@ export default function Hero() {
         </span>{' '}
         <br /> for kids
       </h1>
-      <p className='body4 text-gray'>
+      <p className='body4 text-gray dark:text-gray-400'>
         Discover thousands of fun and interactive learning activities <br /> to
         support your child's growth and learning process.
       </p>
