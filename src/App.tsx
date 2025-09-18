@@ -13,7 +13,7 @@ export default function App() {
             path='/'
             element={
               <div>
-                <Hero /> <InteractiveFeatures /> <LearningMaterials />{' '}
+                <Hero /> <InteractiveFeatures /> <LearningMaterials />
               </div>
             }
           />

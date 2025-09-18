@@ -46,7 +46,7 @@ body {
 
 /* headings */
 .h1 {
-  @apply font-quicksand text-[112px] leading-[100px];
+  @apply font-quicksand text-[112px] leading-[110px];
 }
 .h2 {
   @apply font-courgette text-[112px] leading-[100px];
