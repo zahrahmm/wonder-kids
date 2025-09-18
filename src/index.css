@@ -1,8 +1,7 @@
 @import 'tailwindcss';
-
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap');
-:root {
+@import '@fontsource/quicksand';
+@import '@fontsource/courgette';
+@theme {
   --background: #ffffff;
   --foreground: #171717;
   --black: #121212;
@@ -23,8 +22,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-quicksand: var(--font-quicksand);
-  --font-courgette: var(--font-courgette);
   --color-black: var(--black);
   --color-gray: var(--gray);
   --color-white: var(--white);
@@ -44,9 +41,7 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-quicksand);
+  @apply bg-background font-quicksand text-foreground;
 }
 
 /* headings */

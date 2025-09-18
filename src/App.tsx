@@ -4,7 +4,7 @@ import Hero from './components/home/Hero'
 import InteractiveFeatures from './components/home/interactiveFeatures'
 import LearningMaterials from './components/home/learningMaterials'
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -25,5 +25,3 @@ function App() {
     </BrowserRouter>
   )
 }
-
-export default App

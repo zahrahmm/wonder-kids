@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/quicksand':
+        specifier: ^5.2.10
+        version: 5.2.10
+      '@fontsource/courgette':
+        specifier: ^5.2.7
+        version: 5.2.7
+      '@fontsource/quicksand':
+        specifier: ^5.2.10
+        version: 5.2.10
       '@tailwindcss/vite':
         specifier: ^4.1.13
         version: 4.1.13(vite@7.1.5(jiti@2.5.1)(lightningcss@1.30.1))
@@ -336,6 +345,15 @@ packages:
   '@eslint/plugin-kit@0.3.5':
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fontsource-variable/quicksand@5.2.10':
+    resolution: {integrity: sha512-1uzkzGDwWgtFnxquAXuD7fZV9wHkALb49UPzRXxGTVeeLsNrGnIU0O/pcz6m1U7RDtpHz2qx77JhCpKaq7FrUg==}
+
+  '@fontsource/courgette@5.2.7':
+    resolution: {integrity: sha512-ZNlXTAaGRWjWijNeD3DBW2akGa8jBhS+wZolCsy9bp5Efv0TEcieO/+G2HSWUkz9WJrhWu9eyLPuGpP+GgKchA==}
+
+  '@fontsource/quicksand@5.2.10':
+    resolution: {integrity: sha512-rck0ccT6vJF9RnbSW2ON1grq5qFZvjVOGvYIUixATXF8mNh4KglD+8Sn8QpRgKQBSBJF5yOR3SBYBWPg/Y8YbQ==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1586,6 +1604,12 @@ snapshots:
     dependencies:
       '@eslint/core': 0.15.2
       levn: 0.4.1
+
+  '@fontsource-variable/quicksand@5.2.10': {}
+
+  '@fontsource/courgette@5.2.7': {}
+
+  '@fontsource/quicksand@5.2.10': {}
 
   '@humanfs/core@0.19.1': {}
 
