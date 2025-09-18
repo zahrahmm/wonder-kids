@@ -3,13 +3,10 @@ import Layout from './components/Layout'
 import Hero from './components/home/Hero'
 import InteractiveFeatures from './components/home/interactiveFeatures'
 import LearningMaterials from './components/home/learningMaterials'
-import JoyfulLearning from "./components/JoyfulLearning";
-import ReadOurBlog from "./components/ReadOurBlog";
+import JoyfulLearning from './components/JoyfulLearning'
+import ReadOurBlog from './components/ReadOurBlog'
 
 export default function App() {
-
-
-function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -18,8 +15,11 @@ function App() {
             path='/'
             element={
               <div>
-                <Hero /> <InteractiveFeatures /> <LearningMaterials /> <JoyfulLearning />
-      <ReadOurBlog />
+                <Hero />
+                <InteractiveFeatures />
+                <LearningMaterials />
+                <JoyfulLearning />
+                <ReadOurBlog />
               </div>
             }
           />
