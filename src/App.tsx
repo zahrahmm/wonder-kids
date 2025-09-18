@@ -3,6 +3,8 @@ import Layout from './components/Layout'
 import Hero from './components/home/Hero'
 import InteractiveFeatures from './components/home/interactiveFeatures'
 import LearningMaterials from './components/home/learningMaterials'
+import JoyfulLearning from './components/JoyfulLearning'
+import ReadOurBlog from './components/ReadOurBlog'
 
 export default function App() {
   return (
@@ -13,7 +15,11 @@ export default function App() {
             path='/'
             element={
               <div>
-                <Hero /> <InteractiveFeatures /> <LearningMaterials />
+                <Hero />
+                <InteractiveFeatures />
+                <LearningMaterials />
+                <JoyfulLearning />
+                <ReadOurBlog />
               </div>
             }
           />
