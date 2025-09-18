@@ -1,4 +1,4 @@
-import { useState ,useEffect } from "react";
+import { useState, useEffect } from "react";
 import yellow from "../assets/yellow.svg";
 import purple from "../assets/purple.svg";
 import Teacher from "./Teacher";
@@ -11,7 +11,7 @@ import purple2 from "../assets/purple2.svg";
 import arrow from "../assets/arrow.svg";
 
 const JoyfulLearning = () => {
-  const [currentIndex,setCurrentIndex]= useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(
     window.innerWidth < 768 ? 2 : 4
   );
@@ -20,9 +20,11 @@ const JoyfulLearning = () => {
     { image: teacher2, name: "Jacob Jones", title: "Math Teacher" },
     { image: teacher3, name: "Jenny Wilson", title: "Drawing Teacher" },
     { image: teacher4, name: "Kristin Watson", title: "Science Teacher" },
+    { image: teacher1, name: "Emily Davis", title: "Music Teacher" },
+    { image: teacher3, name: "Michael Brown", title: "Sports Teacher" },
   ];
 
-   useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       setItemsPerPage(window.innerWidth < 768 ? 2 : 4);
       setCurrentIndex(0);
@@ -31,19 +33,17 @@ const JoyfulLearning = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const totalPages = Math.ceil(teachers.length / itemsPerPage);
+  const visibleTeachers = Array.from({ length: itemsPerPage }, (_, i) => {
+    return teachers[(currentIndex + i) % teachers.length];
+  });
 
   const nextTeacher = () => {
-    setCurrentIndex((prev) => (prev + 1) % totalPages);
+    setCurrentIndex((prev) => (prev + 1) % teachers.length);
   };
 
   const prevTeacher = () => {
-    setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
+    setCurrentIndex((prev) => (prev - 1 + teachers.length) % teachers.length);
   };
-
-  const start = currentIndex * itemsPerPage;
-  const visibleTeachers = teachers.slice(start, start + itemsPerPage);
-
   return (
     <section className="bg-purple-300 relative z-10 overflow-hidden py-15 md:py-30 flex justify-center items-center flex-col">
       <img
@@ -56,6 +56,7 @@ const JoyfulLearning = () => {
           lg:top-[12%] lg:left-[7%] lg:w-[114px]
         "
         alt=""
+        aria-hidden="true"
       ></img>
       <h4 className="font-semibold h4 text-center  max-w-[994px] mx-auto flex flex-col justify-center items-center text-background ">
         We aim to help children
@@ -73,33 +74,41 @@ const JoyfulLearning = () => {
           lg:top-[40%] lg:right-[6%] 
         "
         alt=""
+        aria-hidden="true"
       ></img>
       <img
         src={purple2}
         className="
           absolute z-20
-          bottom-[15%] right-[8%] w-6.5
-          sm:bottom-[25%] sm:right-[12%] sm:w-8.5
-          md:bottom-[30%] md:right-[30%] md:w-10.5
-          lg:bottom-[32%] lg:right-[35%] lg:w-12.5
+          bottom-[15%] right-[8%] w-10.5
+          sm:bottom-[40%] sm:right-[18%] 
+          md:bottom-[40%] md:right-[32%]
+          lg:bottom-[34%] lg:right-[35%] lg:w-12.5
         "
         alt=""
+        aria-hidden="true"
       ></img>
       <img
         src={yellow2}
         className="
           absolute z-20
-          bottom-[12%] left-[6%] w-4.5
-          sm:bottom-[26%] sm:left-[33%] sm:w-8.5
-          md:bottom-[28%] md:left-[30%] md:w-12.5
-          lg:bottom-[30%] lg:left-[33%] lg:w-16.5
+          bottom-[50%] left-[12%] w-12.5
+          sm:bottom-[42%] sm:left-[22%] 
+          md:bottom-[38%] md:left-[30%] 
+          lg:bottom-[32%] lg:left-[33%] lg:w-16.5
         "
         alt=""
+        aria-hidden="true"
       ></img>
-      <div className="z-10 flex justify-center items-center gap-9 mt-20">
-        <img src={arrow} alt="next arrow" className="cursor-pointer " onClick={nextTeacher}></img>
-        <div className="grid grid-cols-2 md:grid-cols-4 grid-row-reverse">
-        {visibleTeachers.map((teacher, index) => (
+      <div className="z-10 flex justify-center items-center gap-6 md:gap-15  mt-20">
+        <img
+          src={arrow}
+          alt="next arrow"
+          className="rotate-180 cursor-pointer w-8 lg:w-14"
+          onClick={nextTeacher}
+        ></img>
+        <div className="grid grid-cols-2 md:grid-cols-4 grid-row-reverse gap-9">
+          {visibleTeachers.map((teacher, index) => (
             <Teacher
               key={index}
               image={teacher.image}
@@ -108,7 +117,12 @@ const JoyfulLearning = () => {
             />
           ))}
         </div>
-        <img src={arrow} className="rotate-180 cursor-pointer " onClick={prevTeacher} alt="prev arrow"></img>
+        <img
+          src={arrow}
+          className=" cursor-pointer w-8 lg:w-14"
+          onClick={prevTeacher}
+          alt="prev arrow"
+        ></img>
       </div>
     </section>
   );
