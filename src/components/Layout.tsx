@@ -4,9 +4,9 @@ import Footer from './Layout/Footer'
 
 export default function Layout() {
   return (
-    <div className='flex flex-col min-h-screen max-w-[1440px] m-auto'>
+    <div className='flex flex-col min-h-screen m-auto'>
       <header>
-        <nav className='flex h-34 items-center justify-between'>
+        <nav className='flex h-34 items-center justify-between max-w-[1440px] m-auto'>
           <div className='flex items-center justify-center gap-2'>
             <img
               className=''
@@ -26,7 +26,7 @@ export default function Layout() {
         </nav>
       </header>
       <main className='flex-grow'>
-        <div className='mx-auto max-w- p-4'>
+        <div className='mx-auto p-4'>
           <Outlet />
         </div>
       </main>
