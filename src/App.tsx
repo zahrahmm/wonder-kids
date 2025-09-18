@@ -1,3 +1,4 @@
+import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
 import JoyfulLearning from "./components/JoyfulLearning";
 import ReadOurBlog from "./components/ReadOurBlog";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <JoyfulLearning />
       <ReadOurBlog />
+      <FrequentlyAskedQuestions />
     </>
   );
 }
