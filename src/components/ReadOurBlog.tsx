@@ -1,8 +1,8 @@
-import show from "../assets/show.svg";
 import FunActivitiesForKids from "../assets/Fun-Activities-for-Kids.svg";
 import LearningGameIdeas from "../assets/Learning-Game-Ideas.svg";
 import LearningWithGames from "../assets/Learning-with-Games.svg";
 import Blog from "./Blog";
+import { Show } from "./Icons";
 const ReadOurBlog = () => {
   const blogs = [
     {
@@ -30,9 +30,14 @@ const ReadOurBlog = () => {
         <h4 className="h4 font-semibold">
           Read our <span className="h3 font-normal text-purple-300">blog</span>
         </h4>
-        <div className="flex items-center justify-center gap-1 sm:gap-3 cursor-pointer">
-          <p className="body5 text-purple-300 font-semibold">See All</p>
-          <img src={show} alt="show" className="w-7 h-7 sm:w-10 sm:h-10" />
+        <div
+          className="group flex items-center justify-center gap-1 sm:gap-3 cursor-pointer
+  border border-transparent rounded-[40px] py-4 px-4 text-purple-300
+  transition-colors duration-1000
+  hover:border-purple-300 hover:bg-purple-300 hover:text-white"
+        >
+          <p className="body5 font-semibold">See All</p>
+          <Show className="w-7 h-7 sm:w-10 sm:h-10" />
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-stretch justify-center gap-8 ">
