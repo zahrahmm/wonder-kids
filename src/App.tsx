@@ -14,7 +14,7 @@ export default function App() {
           <Route
             path='/'
             element={
-              <div>
+              <div className='mx-auto'>
                 <Hero />
                 <InteractiveFeatures />
                 <LearningMaterials />

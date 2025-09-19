@@ -26,7 +26,7 @@ export default function Layout() {
         </nav>
       </header>
       <main className='flex-grow'>
-        <div className='mx-auto p-4'>
+        <div className='mx-auto'>
           <Outlet />
         </div>
       </main>

@@ -24,7 +24,7 @@ export default function Hero() {
         Discover thousands of fun and interactive learning activities <br /> to
         support your child's growth and learning process.
       </p>
-      <button className='text-[20px] flex justify-center items-center gap-4 font-semibold text-background dark:text-foreground rounded-[40px] bg-purple-300 h-18 w-[207px] hover:bg-purple-300/80 transition-all duration-300 cursor-pointer'>
+      <button className='text-body4 flex justify-center items-center gap-4 font-semibold text-background dark:text-foreground rounded-[40px] bg-purple-300 h-18 w-[207px] hover:bg-purple-300/80 transition-all duration-300 cursor-pointer'>
         Get Started
         <img className='' src='/Group 427319395.svg'></img>
       </button>

@@ -110,7 +110,7 @@ body {
 .body3 {
   @apply font-quicksand text-[14px] leading-[20px]
          sm:text-[16px] sm:leading-[24px]
-         lg:text-[18px] lg:leading-[28px];
+         lg:text-[20px] lg:leading-[28px];
 }
 
 .body4 {
