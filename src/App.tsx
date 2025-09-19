@@ -5,6 +5,7 @@ import InteractiveFeatures from './components/home/interactiveFeatures'
 import LearningMaterials from './components/home/learningMaterials'
 import JoyfulLearning from './components/JoyfulLearning'
 import ReadOurBlog from './components/ReadOurBlog'
+import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
                 <LearningMaterials />
                 <JoyfulLearning />
                 <ReadOurBlog />
+                <FrequentlyAskedQuestions />
               </div>
             }
           />
