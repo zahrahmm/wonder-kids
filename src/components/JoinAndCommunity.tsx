@@ -45,7 +45,7 @@ const JoinAndCommunity = () => {
             placeholder='Email or Phone'
             className='rounded-[64px] w-full bg-background py-4 px-6 body5 font-medium'
           />
-          <button className='rounded-[40px] w-full sm:max-w-[196px] bg-yellow-300 my-6 py-4 body5 font-semibold'>
+          <button className='rounded-[40px] w-full sm:max-w-[196px] bg-yellow-300 my-6 py-4 body5 font-semibold cursor-pointer hover:opacity-90 hover:bg-yellow-200'>
             Submit
           </button>
         </form>
