@@ -5,7 +5,8 @@ import InteractiveFeatures from './components/home/interactiveFeatures'
 import LearningMaterials from './components/home/learningMaterials'
 import JoyfulLearning from './components/JoyfulLearning'
 import ReadOurBlog from './components/ReadOurBlog'
-import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
+import FrequentlyAskedQuestions from './components/FrequentlyAskedQuestions'
+import JoinAndCommunity from './components/JoinAndCommunity'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
                 <JoyfulLearning />
                 <ReadOurBlog />
                 <FrequentlyAskedQuestions />
+                <JoinAndCommunity />
               </div>
             }
           />
