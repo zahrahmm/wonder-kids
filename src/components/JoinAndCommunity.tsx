@@ -3,11 +3,11 @@ import JC from '../assets/JoinAndCommunity.svg'
 import JoinLogo from '../assets/JoinLogo.svg'
 const JoinAndCommunity = () => {
   return (
-    <section className='bg-purple-300 max-w-[1280px] rounded-[32px] sm:rounded-[64px] mx-auto grid grid-cols-1 sm:grid-cols-5 my-10 sm:my-15 px-3 sm:px-0'>
-      <div className='sm:col-span-3 relative'>
+    <section className='relative bg-purple-300 max-w-[1280px] md:h-[585px] rounded-[32px] sm:rounded-[64px] md:mx-auto max-sm:grid grid-cols-1 my-10 sm:my-15 sm:px-0 flex justify-between'>
+      <div className='order-2 sm:order-1'>
         <img
           src={purple}
-          className='w-[120px] h-[120px] sm:w-[149px] sm:h-[148px] opacity-30 absolute top-[27%] left-[2px]'
+          className='w-[120px] h-[120px] sm:w-[149px] sm:h-[148px] opacity-30 absolute bottom-[27%] md:bottom-[284px] left-[2px]'
           alt=''
           aria-hidden='true'
         />
@@ -19,7 +19,7 @@ const JoinAndCommunity = () => {
         />
       </div>
 
-      <div className='sm:col-span-2 sm:max-w-[453px]'>
+      <div className='order-1 sm:order-2 flex flex-col justify-center sm:max-w-[453px] sm:mr-28 p-3'>
         <h5 className='font-semibold h5 text-background flex justify-center items-center flex-wrap py-3 gap-1 sm:block sm:py-0 sm:gap-0'>
           Join our
           <div className='flex justify-center sm:justify-start gap-2 items-center'>

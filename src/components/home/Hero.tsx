@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className='relative flex flex-col items-center gap-12 h-[688px] text-center py-15'>
+    <div className='relative flex flex-col items-center gap-12 h-[688px] max-w-[1440px] text-center mx-auto py-15'>
       <h1 className='h1 font-semibold max-w-[937px] mx-auto'>
         The best place to{' '}
         <span className='relative h2 font-normal font-courgette text-purple-300'>
@@ -24,7 +24,7 @@ export default function Hero() {
         Discover thousands of fun and interactive learning activities <br /> to
         support your child's growth and learning process.
       </p>
-      <button className='text-body4 flex justify-center items-center gap-4 font-semibold text-background dark:text-foreground rounded-[40px] bg-purple-300 h-18 w-[207px] hover:bg-purple-300/80 transition-all duration-300 cursor-pointer'>
+      <button className='text-body4 flex justify-center items-center gap-4 font-semibold text-background dark:text-foreground rounded-[40px] bg-purple-300 h-18 w-[207px] hover:bg-purple-300/80 transition-all duration-1000 cursor-pointer'>
         Get Started
         <img className='' src='/Group 427319395.svg'></img>
       </button>
@@ -43,6 +43,7 @@ export default function Hero() {
       <img
         className='absolute -z-10 bottom-[104px] right-[190px]'
         src='/Element 4.svg'
+        alt=''
       ></img>
       <img
         className='absolute -z-10 top-[92px] right-[40px]'

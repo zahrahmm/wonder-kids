@@ -15,9 +15,7 @@ export default function Layout() {
               width={32}
               height={32}
             />
-            <h4 className='font-quicksand text-[28px] font-semibold'>
-              WonderKids
-            </h4>
+            <h4 className='text-[28px] font-semibold'>WonderKids</h4>
           </div>
           <Navbar />
           <div>

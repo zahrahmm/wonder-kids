@@ -9,7 +9,7 @@ export default function Navbar() {
   ]
 
   return (
-    <div className='flex items-center space-x-1'>
+    <div className='flex items-center gap-x-1'>
       {links.map((link) => (
         <NavLink
           key={link.to}

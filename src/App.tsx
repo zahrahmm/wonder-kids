@@ -23,7 +23,9 @@ export default function App() {
                 <JoyfulLearning />
                 <ReadOurBlog />
                 <FrequentlyAskedQuestions />
-                <JoinAndCommunity />
+                <div className='mx-3'>
+                  <JoinAndCommunity />
+                </div>
               </div>
             }
           />
