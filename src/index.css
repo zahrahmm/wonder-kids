@@ -47,7 +47,7 @@ body {
 
 /* headings */
 .h1 {
-  @apply font-quicksand text-[40px] leading-[48%]    
+  @apply font-quicksand text-[36px] leading-[100%]    
          sm:text-[72px] sm:leading-[80%] 
          lg:text-[112px] lg:leading-[100%];
 }
@@ -130,3 +130,18 @@ body {
          sm:text-[13px] sm:leading-[16px]
          lg:text-[14px] lg:leading-[20px];
 }
+
+.btn {
+  @apply flex justify-center items-center gap-4 font-semibold text-background dark:text-foreground rounded-[40px] bg-purple-300 h-18 hover:bg-purple-300/80 transition-all duration-1000 cursor-pointer;
+}
+
+.btn-secondry {
+  @apply flex justify-center items-center gap-4 font-semibold text-background dark:text-foreground rounded-[40px] bg-yellow-300 h-18 hover:bg-yellow-300/80 transition-all duration-1000 cursor-pointer;
+}
+
+.btn-outline {
+  @apply flex justify-center items-center gap-4 font-semibold rounded-[40px] border border-purple-300 text-purple-300 pl-6 pr-3 h-[56px] hover:bg-purple-300/80 hover:text-background dark:hover:text-foreground transition-all duration-1000 cursor-pointer;
+}
+/* .btn-ghost {
+  @apply;
+} */
