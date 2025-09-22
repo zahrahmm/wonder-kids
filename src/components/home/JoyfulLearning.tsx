@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
-import yellow from '../assets/yellow.svg'
-import purple from '../assets/purple.svg'
-import Teacher from './Teacher'
-import teacher1 from '../assets/teacher1.svg'
-import teacher2 from '../assets/teacher2.svg'
-import teacher3 from '../assets/teacher3.svg'
-import teacher4 from '../assets/teacher4.svg'
-import purple2 from '../assets/purple2.svg'
-import arrow from '../assets/arrow.svg'
+import yellow from '../../assets/yellow.svg'
+import purple from '../../assets/purple.svg'
+import Teacher from '../Teacher'
+import teacher1 from '../../assets/teacher1.svg'
+import teacher2 from '../../assets/teacher2.svg'
+import teacher3 from '../../assets/teacher3.svg'
+import teacher4 from '../../assets/teacher4.svg'
+import purple2 from '../../assets/purple2.svg'
+import arrow from '../../assets/arrow.svg'
 
 const JoyfulLearning = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
