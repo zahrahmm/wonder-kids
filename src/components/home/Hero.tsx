@@ -10,7 +10,7 @@ export default function Hero() {
             src='/Line element 1.svg'
           ></img>
         </span>{' '}
-        and
+        and{' '}
         <span className='relative h2 font-normal font-courgette text-yellow-300'>
           play
           <img
