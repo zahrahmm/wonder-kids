@@ -15,8 +15,9 @@ export default function Footer() {
         </div>
 
         <div className='md:col-span-2 flex flex-col gap-4'>
-          <h6 className='body2 text-color-black'>Home</h6>
+         
           <ul className='space-y-4 text-color-gray body3'>
+             <li>Home</li>
             <li>App</li>
             <li>About</li>
             <li>People</li>
@@ -24,8 +25,9 @@ export default function Footer() {
         </div>
 
         <div className='md:col-span-2 flex flex-col gap-4'>
-          <h6 className='body2 text-color-black'>For school</h6>
+    
           <ul className='space-y-4 text-color-gray body3'>
+                  <li>For school</li>
             <li>Brain training</li>
             <li>E-learning</li>
             <li>Online modules</li>
@@ -33,8 +35,9 @@ export default function Footer() {
         </div>
 
         <div className='md:col-span-2 flex flex-col gap-5'>
-          <h6 className='body2 text-color-black'>Media</h6>
+    
           <ul className='space-y-4 text-color-gray body3'>
+                  <li>Media</li>
             <li>Support Us</li>
             <li>Contact</li>
             <li>Places</li>
