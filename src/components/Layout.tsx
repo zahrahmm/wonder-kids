@@ -2,12 +2,30 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { Menu, User } from 'lucide-react'
 import Navbar from './Layout/navBar'
 import Footer from './Layout/Footer'
+import { useEffect, useState } from 'react'
 
 export default function Layout() {
+  const [shrink, setShrink] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShrink(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <div className='flex flex-col min-h-screen m-auto'>
-      <header>
-        <nav className='flex h-34 items-center justify-between max-w-[1440px] m-auto px-[5vw]'>
+    <div className='flex flex-col min-h-screen'>
+      <header className='sticky top-0 z-50'>
+        <nav
+          className={`transition-all duration-1000 flex items-center justify-between max-w-[1440px] mx-auto  ${
+            shrink
+              ? 'w-1/2 rounded-[40px] shadow-2xl bg-background/70 backdrop-blur-md h-16 mt-10 px-4'
+              : 'w-full h-34 px-[5vw]'
+          }`}
+        >
           <div className='max-lg:order-2 flex items-center justify-center gap-2'>
             <img
               className=''
@@ -16,7 +34,9 @@ export default function Layout() {
               width={32}
               height={32}
             />
-            <h4 className='text-[28px] font-semibold'>WonderKids</h4>
+            {!shrink && (
+              <h4 className='text-[28px] font-semibold'>WonderKids</h4>
+            )}
           </div>
           <div className='max-lg:hidden'>
             <Navbar />
@@ -31,10 +51,12 @@ export default function Layout() {
               </span>
               <span className='max-sm:hidden'>Sign In</span>
             </NavLink>
-            <button className='btn-outline body4 max-sm:hidden!'>
-              Contact Us
-              <img src='/Group 427319385.svg' alt='' className='h-10 w-10' />
-            </button>
+            {!shrink && (
+              <button className='btn-outline body4 max-sm:hidden!'>
+                Contact Us
+                <img src='/Group 427319385.svg' alt='' className='h-10 w-10' />
+              </button>
+            )}
           </div>
         </nav>
       </header>
