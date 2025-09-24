@@ -1,10 +1,9 @@
-import type { ReactElement } from 'react'
 import yellow2 from '../assets/yellow2.svg'
 interface TeacherProps {
   image: string
   name: string
   title: string
-  showYellow2: ReactElement
+  showYellow2?: boolean
 }
 const Teacher = (props: TeacherProps) => {
   return (

@@ -3,10 +3,10 @@ import Layout from './components/Layout'
 import Hero from './components/home/Hero'
 import InteractiveFeatures from './components/home/interactiveFeatures'
 import LearningMaterials from './components/home/learningMaterials'
-import JoyfulLearning from './components/JoyfulLearning'
-import ReadOurBlog from './components/ReadOurBlog'
-import FrequentlyAskedQuestions from './components/FrequentlyAskedQuestions'
-import JoinAndCommunity from './components/JoinAndCommunity'
+import JoyfulLearning from './components/home/JoyfulLearning'
+import ReadOurBlog from './components/home/ReadOurBlog'
+import FrequentlyAskedQuestions from './components/home/FrequentlyAskedQuestions'
+import JoinAndCommunity from './components/home/JoinAndCommunity'
 
 export default function App() {
   return (

@@ -1,6 +1,6 @@
-import yellow from '../assets/yellow.svg'
-import purple from '../assets/purple3.svg'
-import Question from './Question'
+import yellow from '../../assets/yellow.svg'
+import purple from '../../assets/purple3.svg'
+import Question from '../Question'
 const FrequentlyAskedQuestions = () => {
   const questions = [
     {

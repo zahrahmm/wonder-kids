@@ -1,8 +1,8 @@
-import FunActivitiesForKids from '../assets/Fun-Activities-for-Kids.svg'
-import LearningGameIdeas from '../assets/Learning-Game-Ideas.svg'
-import LearningWithGames from '../assets/Learning-with-Games.svg'
-import Blog from './Blog'
-import { Show } from './Icons'
+import FunActivitiesForKids from '../../assets/Fun-Activities-for-Kids.svg'
+import LearningGameIdeas from '../../assets/Learning-Game-Ideas.svg'
+import LearningWithGames from '../../assets/Learning-with-Games.svg'
+import Blog from '../Blog'
+import { Show } from '../Icons'
 const ReadOurBlog = () => {
   const blogs = [
     {

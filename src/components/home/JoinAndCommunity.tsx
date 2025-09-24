@@ -1,6 +1,6 @@
-import purple from '../assets/purple2.svg'
-import JC from '../assets/JoinAndCommunity.svg'
-import JoinLogo from '../assets/JoinLogo.svg'
+import purple from '../../assets/purple2.svg'
+import JC from '../../assets/JoinAndCommunity.svg'
+import JoinLogo from '../../assets/JoinLogo.svg'
 const JoinAndCommunity = () => {
   return (
     <section className='relative bg-purple-300 max-w-[1280px] md:h-[585px] rounded-[32px] sm:rounded-[64px] md:mx-auto max-sm:grid grid-cols-1 my-10 sm:my-15 sm:px-0 flex justify-between'>
