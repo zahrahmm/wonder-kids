@@ -47,88 +47,88 @@ body {
 
 /* headings */
 .h1 {
-  @apply font-quicksand text-[36px] leading-[100%]    
-         sm:text-[72px] sm:leading-[80%] 
-         lg:text-[112px] lg:leading-[100%];
+  @apply font-quicksand text-[36px]    /* base */
+         sm:text-[72px]            /* sm */
+         lg:text-[112px] lg:leading-[100%]; /* lg */
 }
 
 .h2 {
-  @apply font-courgette text-[36px] leading-[44%]
-         sm:text-[64px] sm:leading-[72%]
-         lg:text-[112px] lg:leading-[100%];
+  @apply font-courgette text-[36px]  /* base */
+         sm:text-[64px]           /* sm */
+         lg:text-[112px] lg:leading-[100%]; /* lg */
 }
 
 .h3 {
-  @apply font-courgette text-[28px] leading-[36%]
-         sm:text-[48px] sm:leading-[60%]
-         lg:text-[72px] lg:leading-[120%];
+  @apply font-courgette text-[28px]  /* base */
+         sm:text-[48px]           /* sm */
+         lg:text-[72px] lg:leading-[120%]; /* lg */
 }
 
 .h4 {
-  @apply font-quicksand text-[24px] leading-[80%]
-         sm:text-[40px] sm:leading-[100%]
-         lg:text-[64px] lg:leading-[120%];
+  @apply font-quicksand text-[24px]  /* base */
+         sm:text-[40px]          /* sm */
+         lg:text-[64px] lg:leading-[120%]; /* lg */
 }
 
 .h5 {
-  @apply font-quicksand text-[22px] leading-[28%]
-         sm:text-[36px] sm:leading-[48%]
-         lg:text-[56px] lg:leading-[120%];
+  @apply font-quicksand text-[22px]  /* base */
+         sm:text-[36px]           /* sm */
+         lg:text-[56px] lg:leading-[120%]; /* lg */
 }
 
 .h6 {
-  @apply font-courgette text-[22px] leading-[28%]
-         sm:text-[36px] sm:leading-[48%]
-         lg:text-[56px] lg:leading-[120%];
+  @apply font-courgette text-[22px]  /* base */
+         sm:text-[36px]           /* sm */
+         lg:text-[56px] lg:leading-[120%]; /* lg */
 }
 
 .h7 {
-  @apply font-quicksand text-[20px] leading-[80%]
-         sm:text-[32px] sm:leading-[100%]
-         lg:text-[48px] lg:leading-[120%];
+  @apply font-quicksand text-[20px]  /* base */
+         sm:text-[32px]           /* sm */
+         lg:text-[48px] lg:leading-[120%]; /* lg */
 }
 
 .h8 {
-  @apply font-courgette text-[20px] leading-[80%]
-         sm:text-[32px] sm:leading-[100%]
-         lg:text-[48px] lg:leading-[120%];
+  @apply font-courgette text-[20px]  /* base */
+         sm:text-[32px]           /* sm */
+         lg:text-[48px] lg:leading-[120%]; /* lg */
 }
 
 /* body */
 .body1 {
-  @apply font-quicksand text-[16px] leading-[24px]     
-         sm:text-[20px] sm:leading-[28px]
-         lg:text-[24px] lg:leading-[32px];
+  @apply font-quicksand text-[16px]   /* base */
+         sm:text-[20px]            /* sm */
+         lg:text-[24px] lg:leading-[32%]; /* lg */
 }
 
 .body2 {
-  @apply font-quicksand text-[16px] leading-[24px] font-semibold
-         sm:text-[20px] sm:leading-[28px] sm:font-semibold
-         lg:text-[24px] lg:leading-[32px] lg:font-semibold;
+  @apply font-quicksand text-[16px]  font-semibold /* base */
+         sm:text-[20px]               /* sm */
+         lg:text-[24px] lg:leading-[32%]; /* lg */
 }
 
 .body3 {
-  @apply font-quicksand text-[14px] leading-[20px]
-         sm:text-[16px] sm:leading-[24px]
-         lg:text-[20px] lg:leading-[28px];
+  @apply font-quicksand text-[14px]   /* base */
+         sm:text-[16px]            /* sm */
+         lg:text-[20px] lg:leading-[28%]; /* lg */
 }
 
 .body4 {
-  @apply font-quicksand text-[14px] leading-[20px]
-         sm:text-[16px] sm:leading-[24px]
-         lg:text-[18px] lg:leading-[28px];
+  @apply font-quicksand text-[14px]   /* base */
+         sm:text-[16px]          /* sm */
+         lg:text-[18px] lg:leading-[28%]; /* lg */
 }
 
 .body5 {
-  @apply font-quicksand text-[12px] leading-[16px]
-         sm:text-[14px] sm:leading-[20px]
-         lg:text-[16px] lg:leading-[24px];
+  @apply font-quicksand text-[12px]   /* base */
+         sm:text-[14px]            /* sm */
+         lg:text-[16px] lg:leading-[24%]; /* lg */
 }
 
 .body6 {
-  @apply font-quicksand text-[12px] leading-[14px]
-         sm:text-[13px] sm:leading-[16px]
-         lg:text-[14px] lg:leading-[20px];
+  @apply font-quicksand text-[12px]   /* base */
+         sm:text-[13px]            /* sm */
+         lg:text-[14px] lg:leading-[20px]; /* lg */
 }
 
 .btn {
