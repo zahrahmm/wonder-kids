@@ -6,7 +6,6 @@ import teacher1 from '../../assets/teacher1.svg'
 import teacher2 from '../../assets/teacher2.svg'
 import teacher3 from '../../assets/teacher3.svg'
 import teacher4 from '../../assets/teacher4.svg'
-import purple2 from '../../assets/purple2.svg'
 import arrow from '../../assets/arrow.svg'
 
 const JoyfulLearning = () => {
@@ -45,20 +44,19 @@ const JoyfulLearning = () => {
   }
   return (
     <section className='bg-purple-300 z-10 overflow-hidden py-15 md:py-30 flex justify-center items-center flex-col'>
-      <div className='relative max-w-[1216px]'>
+      <div className='max-w-[994px] relative z-10'>
         <img
           src={yellow}
           className='
-          absolute 
-          top-[4%] left-[4%] w-[70px]
-          sm:top-[6%] sm:left-[5%] sm:w-[86px]
-          md:top-[8%] md:left-[6%] md:w-[100px]
-          lg:top-[12%] lg:left-[7%] lg:w-[114px]
-        '
+          absolute -z-10
+          lg:top-[0px] lg:-left-[108px] 
+          md:-top-[20px] md:left-[25px] md:w-30 md:block
+          hidden
+          '
           alt=''
           aria-hidden='true'
         ></img>
-        <h4 className='font-semibold h4 text-center  max-w-[994px] mx-auto flex flex-col justify-center items-center text-background '>
+        <h4 className='font-semibold h4 text-center  mx-auto flex flex-col justify-center items-center text-background '>
           We aim to help children
           <span className='text-yellow-200 font-normal h3'>
             discover the joy of creative
@@ -67,52 +65,40 @@ const JoyfulLearning = () => {
         </h4>
         <img
           src={purple}
-          className=' absolute
-          top-[25%] right-[4%] 
-          sm:top-[30%] sm:right-[6%] 
-          md:top-[35%] md:right-[8%] 
-          lg:top-[40%] lg:right-[6%] 
+          className=' absolute -z-10
+          lg:top-[190px] lg:-right-[133px] 
+          md:top-[20px] md:-right-[15px] md:w-30 md:block
+          hidden
         '
           alt=''
           aria-hidden='true'
         ></img>
+      </div>
+      <div className='z-10 flex justify-center items-center gap-6 md:gap-15  mt-20'>
         <img
-          src={purple2}
-          className='
-          absolute z-20
-          bottom-[15%] right-[8%] w-10.5
-          sm:bottom-[40%] sm:right-[18%] 
-          md:bottom-[40%] md:right-[32%]
-          lg:bottom-[34%] lg:right-[35%] lg:w-12.5
-        '
-          alt=''
-          aria-hidden='true'
+          src={arrow}
+          alt='next arrow'
+          className='rotate-180 cursor-pointer w-8 lg:w-14'
+          onClick={nextTeacher}
         ></img>
-        <div className='z-10 flex justify-center items-center gap-6 md:gap-15  mt-20'>
-          <img
-            src={arrow}
-            alt='next arrow'
-            className='rotate-180 cursor-pointer w-8 lg:w-14'
-            onClick={nextTeacher}
-          ></img>
-          <div className='grid grid-cols-2 md:grid-cols-4 grid-row-reverse gap-9'>
-            {visibleTeachers.map((teacher, index) => (
-              <Teacher
-                key={index}
-                showYellow2={index === 1}
-                image={teacher.image}
-                name={teacher.name}
-                title={teacher.title}
-              />
-            ))}
-          </div>
-          <img
-            src={arrow}
-            className=' cursor-pointer w-8 lg:w-14'
-            onClick={prevTeacher}
-            alt='prev arrow'
-          ></img>
+        <div className='grid grid-cols-2 md:grid-cols-4 grid-row-reverse gap-9'>
+          {visibleTeachers.map((teacher, index) => (
+            <Teacher
+              key={index}
+              showYellow2={itemsPerPage === 4 ? index === 1 : index === 0}
+              showPurple2={itemsPerPage === 4 ? index === 2 : index === 1}
+              image={teacher.image}
+              name={teacher.name}
+              title={teacher.title}
+            />
+          ))}
         </div>
+        <img
+          src={arrow}
+          className=' cursor-pointer w-8 lg:w-14'
+          onClick={prevTeacher}
+          alt='prev arrow'
+        ></img>
       </div>
     </section>
   )
