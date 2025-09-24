@@ -129,9 +129,9 @@ export default function LearningMaterials() {
           </p>
 
           {/* CTA Button */}
-          <button className='mt-8 flex items-center gap-1 rounded-full border border-purple-300 text-purple-300 px-6 h-[56px]  md:h-[64px] w-[170px]  md:w-[190px] font-semibold text-[16px] md:text-[18px] bg-white shadow-md hover:text-purple-300/80 transition-all duration-300'>
+          <button className='btn-outline body4 mt-8'>
             Learn more
-            <img src='/Group 427319385.svg' alt='' className='h-6 md:h-8 w-6 md:w-8' />
+            <img src='/Group 427319385.svg' alt='' className='h-10 w-10' />
           </button>
         </div>
 
