@@ -20,6 +20,8 @@
 //             for children
 //           </h1>
 
+import { Show } from '../Icons'
+
 //           <p className='mt-6 max-w-[520px] text-color-gray text-[15px] leading-[26px]'>
 //             Don’t worry! Your children will be having a fun time while learning
 //             with our materials that are easy to understand.
@@ -115,7 +117,7 @@ export default function LearningMaterials() {
               </span>
               <img
                 aria-hidden
-                src='/Vector2.svg'
+                src='./src/assets/Vector2.svg'
                 className='absolute left-0 -bottom-4 w-[180px] md:w-[220px] lg:w-[240px] z-0'
               />
             </span>
@@ -129,9 +131,9 @@ export default function LearningMaterials() {
           </p>
 
           {/* CTA Button */}
-          <button className='btn-outline body4 mt-8'>
-            Learn more
-            <img src='/Group 427319385.svg' alt='' className='h-10 w-10' />
+          <button className='btn-outline group mt-8'>
+            <p className='body4 font-semibold'>Learn more</p>
+            <Show className='w-8 h-8' />
           </button>
         </div>
 
@@ -140,19 +142,19 @@ export default function LearningMaterials() {
           {/* Top pill */}
           <div className='relative h-[120px] md:h-[140px] w-[260px] md:w-[310px]'>
             <img
-              src='/Rectangle 21.svg'
+              src='./src/assets/Rectangle 21.svg'
               alt=''
               className='absolute inset-0 h-full w-full'
             />
             <div className='absolute inset-0 rounded-[70px]'>
               <img
-                src='/wepik-export-20231122022306GgTX 1.svg'
+                src='./src/assets/wepik-export-20231122022306GgTX 1.svg'
                 alt=''
                 className='absolute left-[20px] -top-[80px] h-[180px] md:h-[220px] w-auto object-contain'
               />
             </div>
             <img
-              src='/Vector.svg'
+              src='./src/assets/Vector.svg'
               alt=''
               className='absolute right-[-22px] top-[-20px] z-20 h-[90px] md:h-[110px] w-[90px] md:w-[110px]'
             />
@@ -161,18 +163,18 @@ export default function LearningMaterials() {
           {/* Middle pill */}
           <div className='relative h-[120px] md:h-[140px] w-[360px] md:w-[440px]'>
             <img
-              src='/Rectangle 20.svg'
+              src='./src/assets/Rectangle 20.svg'
               alt=''
               className='absolute inset-0 h-full w-full'
             />
             <img
-              src='/Vector-1.svg'
+              src='./src/assets/Vector-1.svg'
               alt=''
               className='absolute -left-[40px] md:-left-[50px] top-[5px] z-20 h-[80px] md:h-[100px] w-[200px] md:w-[260px]'
             />
             <div className='absolute inset-0 rounded-[70px]'>
               <img
-                src='/wepik-export-20231121071856pDk6 1.svg'
+                src='./src/assets/wepik-export-20231121071856pDk6 1.svg'
                 alt=''
                 className='absolute -right-[1px] -top-[70px] z-10 h-[180px] md:h-[210px] w-auto object-contain'
               />
@@ -182,19 +184,19 @@ export default function LearningMaterials() {
           {/* Bottom pill */}
           <div className='relative h-[120px] md:h-[140px] w-[420px]  md:w-[500px]'>
             <img
-              src='/Rectangle 19.svg'
+              src='./src/assets/Rectangle 19.svg'
               alt=''
               className='absolute inset-0 h-full w-full'
             />
             <div className='absolute inset-0 rounded-[70px]'>
               <img
-                src='/wepik-export-20231121071829rm8c 1.svg'
+                src='./src/assets/wepik-export-20231121071829rm8c 1.svg'
                 alt=''
                 className='absolute left-[40px] md:left-[50px] -top-[80px] h-[180px] md:h-[220px] w-auto object-contain'
               />
             </div>
             <img
-              src='/Group 427319405.svg'
+              src='./src/assets/Group 427319405.svg'
               alt=''
               className='absolute bottom-[-30px] right-[4px] z-20 h-[120px] md:h-[140px] w-[120px] md:w-[140px]'
             />

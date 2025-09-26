@@ -49,8 +49,8 @@ const JoyfulLearning = () => {
           src={yellow}
           className='
           absolute -z-10
-          lg:top-[0px] lg:-left-[108px] 
-          md:-top-[20px] md:left-[25px] md:w-30 md:block
+          lg:top-[0px] lg:-left-[108px] lg:w-28.5
+          md:-top-[20px] md:left-[25px] md:w-27 md:block
           hidden
           '
           alt=''
@@ -66,8 +66,8 @@ const JoyfulLearning = () => {
         <img
           src={purple}
           className=' absolute -z-10
-          lg:top-[190px] lg:-right-[133px] 
-          md:top-[20px] md:-right-[15px] md:w-30 md:block
+          lg:top-[190px] lg:-right-[133px] lg:w-[137px]
+          md:top-[20px] md:-right-[15px] md:w-27 md:block
           hidden
         '
           alt=''

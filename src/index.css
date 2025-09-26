@@ -132,7 +132,7 @@ body {
 }
 
 .btn {
-  @apply flex justify-center items-center gap-4 font-semibold text-background dark:text-foreground rounded-[40px] bg-purple-300 h-18 hover:bg-purple-300/80 transition-all duration-1000 cursor-pointer;
+  @apply flex justify-center items-center gap-4 font-semibold text-background dark:text-foreground rounded-[40px]  bg-purple-300 py-3 px-4 hover:bg-purple-300/80 transition-all duration-1000 cursor-pointer;
 }
 
 .btn-secondry {
@@ -142,6 +142,10 @@ body {
 .btn-outline {
   @apply flex justify-center items-center gap-4 font-semibold rounded-[40px] border border-purple-300 text-purple-300 pl-6 pr-3 h-[56px] hover:bg-purple-300/80 hover:text-background dark:hover:text-foreground transition-all duration-1000 cursor-pointer;
 }
-/* .btn-ghost {
-  @apply;
-} */
+
+.btn-ghost {
+  @apply flex items-center justify-center gap-1 sm:gap-3 cursor-pointer font-semibold
+         border border-transparent rounded-[40px] py-4 px-4 text-purple-300
+         transition-colors duration-1000
+         hover:border-purple-300 hover:bg-purple-300 hover:text-background dark:hover:text-foreground;
+}
