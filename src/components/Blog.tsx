@@ -19,16 +19,10 @@ const Blog = (props: BlogProps) => {
         </h2>
         <p className='body5 font-medium text-gray'>{props.description}</p>
       </div>
-      <div
-        className='flex items-center justify-center gap-3 cursor-pointer py-2 px-3 ml-4 mb-2
-      group sm:gap-3 
-  border border-transparent rounded-[40px] text-purple-300
-  transition-colors duration-1000
-  hover:border-purple-300 hover:bg-purple-300 hover:text-white'
-      >
+      <button className='btn-ghost group ml-3 mb-2'>
         <p className='body5  font-semibold'>Learn more</p>
         <Show className='w-8 h-8' />
-      </div>
+      </button>
     </div>
   )
 }

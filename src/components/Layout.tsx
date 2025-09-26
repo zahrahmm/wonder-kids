@@ -3,6 +3,7 @@ import { Menu, User } from 'lucide-react'
 import Navbar from './Layout/navBar'
 import Footer from './Layout/Footer'
 import { useEffect, useState } from 'react'
+import { Show } from './Icons'
 
 export default function Layout() {
   const [shrink, setShrink] = useState(false)
@@ -29,7 +30,7 @@ export default function Layout() {
           <div className='max-lg:order-2 flex items-center justify-center gap-2'>
             <img
               className=''
-              src='./public/logo.svg'
+              src='/Logo.svg'
               alt='logomark'
               width={32}
               height={32}
@@ -52,9 +53,9 @@ export default function Layout() {
               <span className='max-sm:hidden'>Sign In</span>
             </NavLink>
             {!shrink && (
-              <button className='btn-outline body4 max-sm:hidden!'>
-                Contact Us
-                <img src='/Group 427319385.svg' alt='' className='h-10 w-10' />
+              <button className='btn-outline group body4 max-sm:hidden!'>
+                <p className='body4 font-semibold'>Contact Us</p>
+                <Show className='w-8 h-8' />
               </button>
             )}
           </div>

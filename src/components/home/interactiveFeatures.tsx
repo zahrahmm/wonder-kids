@@ -12,8 +12,8 @@ export default function InteractiveFeatures() {
           <img src='./src/assets/Group 427319415.svg' alt='' />
         </div>
       </div>
-      <div className='grid sm:grid-cols-3 gap-8 items-center justify-between'>
-        <div className='relative h-[300px] sm:h-[448px] px-10 bg-purple-100 rounded-[64px] flex flex-col justify-end overflow-clip'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center justify-between'>
+        <div className='relative h-[300px] sm:h-[448px] px-10 bg-purple-100 rounded-[64px] flex flex-col justify-end overflow-clip transform transition duration-300 hover:scale-105'>
           <div className='space-y-5 pb-12'>
             <h3 className='h7 font-semibold'>
               Fun <br />{' '}
@@ -34,7 +34,7 @@ export default function InteractiveFeatures() {
             alt=''
           />
         </div>
-        <div className='relative h-[300px] sm:h-[448px] px-10 bg-purple-300 rounded-[64px] flex flex-col justify-end overflow-clip'>
+        <div className='relative h-[300px] sm:h-[448px] px-10 bg-purple-300 rounded-[64px] flex flex-col justify-end overflow-clip transform transition duration-300 hover:scale-105'>
           <div className='space-y-5 pb-12 text-background dark:text-foreground'>
             <h3 className='h7 font-semibold'>
               Creative <br />{' '}
@@ -56,7 +56,7 @@ export default function InteractiveFeatures() {
             alt=''
           />
         </div>
-        <div className='relative h-[300px] sm:h-[448px] px-10 bg-yellow-100 rounded-[64px] flex flex-col justify-end overflow-clip'>
+        <div className='relative h-[300px] sm:h-[448px] px-10 bg-yellow-100 rounded-[64px] flex flex-col justify-end overflow-clip transform transition duration-300 hover:scale-105'>
           <div className='space-y-5 pb-12'>
             <h3 className='h7 font-semibold'>
               Learn with <br />{' '}
