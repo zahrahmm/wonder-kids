@@ -17,7 +17,7 @@ const FrequentlyAskedQuestions = () => {
   ]
   return (
     <section className='px-5 py-5 md:px-20 md:py-15 grid grid-cols-1 md:grid-cols-7 justify-between'>
-      <div className='md:col-span-3 flex sm:flex-col flex-row  '>
+      <div className='md:col-span-3 flex sm:flex-col flex-row max-sm:mb-3'>
         <h4 className='h4 font-semibold  md:max-w-[580px]'>
           Frequently{' '}
           <span className='font-normal font-courgette text-purple-300'>
