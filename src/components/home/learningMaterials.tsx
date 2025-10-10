@@ -150,7 +150,7 @@ export default function LearningMaterials() {
               <img
                 src='./src/assets/wepik-export-20231122022306GgTX 1.svg'
                 alt=''
-                className='absolute left-[20px] -top-[80px] h-[180px] md:h-[220px] w-auto object-contain'
+                className='absolute left-[20px] -top-[62px] md:-top-[80px] h-[180px] md:h-[220px] w-auto object-contain'
               />
             </div>
             <img
@@ -176,7 +176,7 @@ export default function LearningMaterials() {
               <img
                 src='./src/assets/wepik-export-20231121071856pDk6 1.svg'
                 alt=''
-                className='absolute -right-[1px] -top-[70px] z-10 h-[180px] md:h-[210px] w-auto object-contain'
+                className='absolute -right-[1px] -top-[62px] md:-top-[70px] z-10 h-[180px] md:h-[210px] w-auto object-contain'
               />
             </div>
           </div>
@@ -186,13 +186,13 @@ export default function LearningMaterials() {
             <img
               src='./src/assets/Rectangle 19.svg'
               alt=''
-              className='absolute inset-0 h-full w-full'
+              className='absolute inset-0 h-full w-full'  
             />
             <div className='absolute inset-0 rounded-[70px]'>
               <img
                 src='./src/assets/wepik-export-20231121071829rm8c 1.svg'
                 alt=''
-                className='absolute left-[40px] md:left-[50px] -top-[80px] h-[180px] md:h-[220px] w-auto object-contain'
+                className='absolute left-[40px] md:left-[50px] -top-[60px] md:-top-[80px] h-[180px] md:h-[220px] w-auto object-contain'
               />
             </div>
             <img
